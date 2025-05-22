@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<p><button onclick="myFunction()">Click Me</button></p>
+
+<div id="myDIV">Click on the button to toggle
+    between the class to see the
+    effects</div>
+
+<style>
+    script {
+        font-size: 80px;
+        color: blue;
+    }
+</style>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.innerHTML === "Click on the button to toggle between the class to see the effects") {
+    x.innerHTML = "Y O U  K N O W  W H O  Y O U  A R E";
+  } else {
+    x.innerHTML = "Click on the button to toggle between the class to see the effects";
+  }
+}
+</script>
+
+</body>
+</html>
