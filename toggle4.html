@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    .paragraphClass {
+        width: 100%;
+        padding: 25px;
+        background-color: green;
+        color: red;
+        font-size: 50px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    #Button {
+        margin-top: 15px;
+    }
+</style>
+
+<script>
+    function myFunc() {
+        let para = document.getElementById("p");
+        para.classList.toggle("paragraphClass");
+    }
+</script>
+</head>
+<button id="Button" onclick="myFunc()">
+    Click to toggle class effect
+</button>
+<body>
+    <p id="p">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum doloremque corporis, repudiandae explicabo deleniti beatae nam ad deserunt tempora libero quaerat vero quo maxime velit neque vel. Architecto, molestiae quidem.
+    </p>
+</body>
+
+</html>
